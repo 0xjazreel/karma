@@ -1,12 +1,39 @@
+import React from "react";
 import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Karma Protocol - On-Chain Reputation Rewards Cheaper Trades",
+  title: "Karma Protocol | On-chain Reputation = Cheaper Trades",
   description:
-    "Uniswap V4 Hook that applies dynamic fees based on wallet reputation. Your on-chain karma earns you cheaper trades.",
-  keywords:
-    "Uniswap V4, DeFi, reputation, karma, swap fees, X Layer, Ethereum",
+    "Karma Protocol is a Uniswap V4 Hook that applies dynamic swap fees based on your on-chain reputation score.",
+  keywords: [
+    "Karma",
+    "Protocol",
+    "Uniswap",
+    "V4",
+    "Hook",
+    "X Layer",
+    "DeFi",
+    "Reputation",
+    "Fees",
+  ],
+  openGraph: {
+    title: "Karma Protocol | On-chain Reputation = Cheaper Trades",
+    description: "Your on-chain reputation earns you cheaper trades",
+    url: "https://karmaprotocol.vercel.app",
+    type: "website",
+    images: [
+      {
+        url: "https://karmaprotocol.vercel.app/og-image.png",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    creator: "@KarmaProtocol_",
+  },
 };
 
 export default function RootLayout({
@@ -16,7 +43,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-slate-950 text-white">{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
