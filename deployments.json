@@ -1,0 +1,18 @@
+{
+  "testnet": {
+    "network": "xlayer-testnet",
+    "chainId": 1952,
+    "KarmaRegistry": "0x_FILL_AFTER_DEPLOY",
+    "KarmaHook": "0x_FILL_AFTER_DEPLOY",
+    "deployedAt": "2026-05-24",
+    "deployer": "0x_YOUR_DEPLOYER_ADDRESS"
+  },
+  "mainnet": {
+    "network": "xlayer-mainnet",
+    "chainId": 196,
+    "KarmaRegistry": "0x_FILL_AFTER_DEPLOY",
+    "KarmaHook": "0x_FILL_AFTER_DEPLOY",
+    "deployedAt": "2026-05-26",
+    "deployer": "0x_YOUR_DEPLOYER_ADDRESS"
+  }
+}
