@@ -1,0 +1,29 @@
+# Environment files — NEVER commit
+.env
+.env.local
+contracts/.env
+agent/.env
+frontend/.env.local
+
+# Foundry build artifacts
+contracts/out/
+contracts/cache/
+
+# Node.js
+node_modules/
+agent/node_modules/
+frontend/node_modules/
+agent/dist/
+
+# Next.js
+frontend/.next/
+frontend/out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
