@@ -27,3 +27,12 @@ Thumbs.db
 .vscode/
 .idea/
 *.swp
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+karma_bot.db
+karma_bot.log
+bot.log
