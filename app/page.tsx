@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import KarmaLookup from "@/components/KarmaLookup";
 import AgentStats from "@/components/AgentStats";
 
@@ -6,16 +7,33 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Header */}
-      <header className="border-b border-purple-500/30 bg-slate-900/50 backdrop-blur">
-        <div className="max-w-6xl mx-auto px-4 py-6">
+      <header className="border-b border-purple-500/30 bg-slate-900/50 backdrop-blur sticky top-0 z-40">
+        <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-4xl font-bold text-white flex items-center gap-3">
-                ⚡ Karma Protocol
-              </h1>
-              <p className="text-purple-300 text-sm mt-1">
-                Your on-chain reputation earns you cheaper trades.
-              </p>
+            <div className="flex items-center gap-6">
+              <div>
+                <h1 className="text-2xl font-bold text-white flex items-center gap-2">
+                  ⚡ Karma Protocol
+                </h1>
+                <p className="text-purple-300 text-xs mt-0.5">
+                  On-chain reputation = cheaper trades
+                </p>
+              </div>
+              <nav className="hidden sm:flex items-center gap-1 text-sm">
+                <Link
+                  href="/"
+                  className="px-3 py-1.5 rounded-lg text-white bg-purple-500/20 font-medium"
+                >
+                  Protocol
+                </Link>
+                <Link
+                  href="/scanner"
+                  className="px-3 py-1.5 rounded-lg text-purple-300 hover:text-white hover:bg-purple-500/10 transition flex items-center gap-1.5"
+                >
+                  <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+                  Wallet Scanner
+                </Link>
+              </nav>
             </div>
             <div className="text-right text-xs text-purple-300">
               <p>Uniswap V4 Hook</p>
