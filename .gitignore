@@ -16,6 +16,8 @@ frontend/node_modules/
 agent/dist/
 
 # Next.js
+.next/
+out/
 frontend/.next/
 frontend/out/
 
